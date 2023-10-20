@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Ratatype login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <div class="flex min-h-full flex-col justify-center px-6 py-5 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-[550px]">
+      <img class="mx-auto w-auto pb-50" src="./img/Ratatype-logo.png" alt="Ratatype">
+      <img class="mx-auto w-auto" src="./img/logo.png" alt="Logo star">
+      <h2 class="mt-10 text-center text-64 font-extrabold leading-6 text-0A335C">Увійти</h2>
+      <button
+        class="mt-11 mb-30 shadow-tertiary-default justify-center items-center self-stretch border-[color:var(--light-brand-brand-primary,#00ACFF)] bg-white flex flex-col rounded-xl border-2 border-solid w-full">
+        <div class="self-center flex max-w-full items-start gap-1.5 my-14px">
+          <img loading="lazy" src="./img/brand-google.png" alt="google"
+            class="aspect-square object-cover object-center w-30 h-30 overflow-hidden shrink-0" />
+          <div class="text-sky-950 text-xl font-bold leading-[150%] self-stretch">
+            Google
+          </div>
+        </div>
+      </button>
+      <p class="text-center mb-15px text-20 font-extrabold line-height-22 text-0A335C">або</p>
+    </div>
+
+    <div class="sm:mx-auto sm:w-full sm:max-w-[550px]">
+      <form class="space-y-6" action="#" method="POST">
+        <div class="mb-6px">
+          <div class="mt-2 mb-5px">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="Ел. пошта"
+              class="block w-full rounded-md text-gray-900 sm:leading-6 w-96 h-1 px-3.5 py-33 bg-slate-100 rounded-lg border-2 border-opacity-10 justify-start items-center gap-2.5 inline-flex">
+          </div>
+          <div id="hidden" class="hidden flex items-center justify-between color-error">
+            Вкажіть вашу ел. пошту
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-5px">
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Пароль"
+              class="block w-full rounded-md text-gray-900 sm:leading-6 w-96 h-1 px-3.5 py-33 bg-slate-100 rounded-lg border-2 border-cyan-900 border-opacity-10 justify-start items-center gap-2.5 inline-flex">
+          </div>
+          <div class="flex items-center justify-between">
+            <div>
+              <a href="#" class="underline color-174258">Не пам'ятаєш пароль?</a>
+            </div>
+          </div>
+        </div>
+
+        <button id="submit" type="submit"
+          class="mt-11 mb-66 shadow-primary-default justify-center items-center bg-yellow-200 self-stretch border-[color:var(--light-brand-brand-primary,#ffcc00)] bg-white flex flex-col rounded-xl border-2 border-solid w-full">
+          <div class="my-14px  text-sky-950 text-xl font-bold leading-[150%] self-stretch">
+            Увійти
+          </div>
+        </button>
+      </form>
+
+      <p class="mt-25px font-size-20 font-medium text-center color-0A335C">
+        Ще не з нами?
+        <a href="#" class="font-semibold hover:text-indigo-500 color-0A335C"><span
+            class="underline">Зареєструватися</span></a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
